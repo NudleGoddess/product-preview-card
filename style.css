@@ -1,0 +1,155 @@
+.mobile-div {
+    display: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+h1 {
+    line-height: 30px;
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 200%;
+    margin-top: -20px;
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    opacity: 60%;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    opacity: 90%;
+    font-size: 90%;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+
+/* divs */
+
+.description-span-dekstop {
+    margin-top: 670px;
+    margin-left: 235px;
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 10px 10px 0;
+    padding-left: 30px;
+}
+
+
+/* images */
+
+.image-dekstop {
+    margin-top: 670px;
+    margin-right: 390px;
+    position: absolute;
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+}
+
+.image-mobile {
+    display: none;
+}
+
+
+/* prices */
+
+.price-1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 32px;
+    padding-right: 20px;
+}
+
+.price-2 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.478);
+    text-decoration: line-through;
+    text-decoration-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* button */
+
+i {
+    padding-right: 10px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 269px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 17%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(30, 38%, 92%);
+    }
+    h6 {
+        margin-left: 25px;
+        font-size: 14px;
+    }
+    h1 {
+        margin-left: 25px;
+        font-size: 34px;
+    }
+    p {
+        margin-left: 25px;
+        font-size: 14px;
+    }
+    .image-mobile {
+        width: 80%;
+        border-radius: 10px 10px 0 0;
+        display: block;
+    }
+    .mobile-div {
+        display: block;
+        flex-wrap: wrap;
+        background-color: hsl(0, 0%, 100%);
+        width: 80%;
+        border-radius: 0 0 10px 10px;
+    }
+    .prices {
+        font-size: 27px !important;
+        margin-left: 25px;
+        margin-top: -18px;
+    }
+    button {
+        text-align: center;
+        width: 68vw;
+    }
+    .button {
+        width: 200px;
+        padding-bottom: 28px;
+    }
+    .image-dekstop {
+        display: none;
+    }
+    .description-span-dekstop {
+        display: none;
+    }
+}
